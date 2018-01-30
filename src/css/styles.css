@@ -10,11 +10,19 @@
       padding: 1.5rem !important;
       box-shadow: none; } }
   .info-card .card .card-title, .info-card2 .card .card-title, .info-card3 .card .card-title, .info-card4 .card .card-title, .info-card5 .card .card-title {
-    font-family: "Alegreya Sans", sans-serif;
+    font-family: "Righteous", cursive;
     color: #17a2b8; }
     @media (max-width: 992px) {
       .info-card .card .card-title h1, .info-card2 .card .card-title h1, .info-card3 .card .card-title h1, .info-card4 .card .card-title h1, .info-card5 .card .card-title h1 {
         font-size: 2rem; } }
+    @media (max-width: 992px) {
+      .info-card .card .card-title h1, .info-card2 .card .card-title h1, .info-card3 .card .card-title h1, .info-card4 .card .card-title h1, .info-card5 .card .card-title h1 {
+        padding: 0 !important; } }
+  .info-card .card .card-text, .info-card2 .card .card-text, .info-card3 .card .card-text, .info-card4 .card .card-text, .info-card5 .card .card-text {
+    font-size: 1.4rem; }
+    @media (max-width: 414px) {
+      .info-card .card .card-text, .info-card2 .card .card-text, .info-card3 .card .card-text, .info-card4 .card .card-text, .info-card5 .card .card-text {
+        padding: 0 !important; } }
   .info-card .card .btn, .info-card2 .card .btn, .info-card3 .card .btn, .info-card4 .card .btn, .info-card5 .card .btn {
     background-color: #17a2b8;
     border-radius: 0; }
@@ -28,11 +36,11 @@
 
 .info-card {
   max-width: 95rem; }
-  .info-card .card {
-    margin: -162px auto 30px; }
 
 .info-card2 {
   position: relative; }
+  .info-card2 .info-card-image2 {
+    background: transparent; }
   @media (max-width: 992px) {
     .info-card2 {
       padding-top: 0 !important;
@@ -70,9 +78,8 @@
       border-radius: 0;
       box-shadow: -25px 12px 46px 0 rgba(0, 0, 0, 0.27);
       display: block;
-      min-height: 40rem;
       position: relative;
-      width: 100%;
+      width: 25%;
       z-index: 0; }
       @media (max-width: 992px) {
         .info-card2 .info-card-image2 img {
@@ -81,8 +88,8 @@
           width: 100%;
           min-height: 0; } }
   .info-card2 .info-card-text {
-    bottom: 0rem;
-    left: 18rem;
+    bottom: 21rem;
+    left: 33rem;
     max-width: 35rem;
     opacity: 0.95;
     position: absolute;
@@ -279,6 +286,9 @@ body {
   .navbar .nav-item a {
     text-decoration: none;
     color: white; }
+    @media (max-width: 992px) {
+      .navbar .nav-item a {
+        padding-left: 0 !important; } }
     .navbar .nav-item a:hover {
       color: #f46a60 !important;
       border-bottom: 1px solid #f46a60; }
@@ -314,7 +324,7 @@ body {
         opacity: 0.9; } }
     .showcase .display h1, .showcase .display .lead {
       text-align: center;
-      font-family: "Alegreya Sans", sans-serif;
+      font-family: "Righteous", cursive;
       height: 65%;
       letter-spacing: 1px;
       margin-top: -4rem;

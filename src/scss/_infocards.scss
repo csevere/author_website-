@@ -21,8 +21,18 @@
 				@media (max-width:$mdtablet){
 					font-size:2rem; 
 				} 
+				@media (max-width:$mdtablet){
+					padding: 0 !important;  
+				} 
 			}
 		} 
+
+		.card-text{
+			font-size: 1.4rem;
+			@media (max-width:$mobile){
+				padding: 0 !important; 
+			} 
+		}
 		.btn{
 			background-color: $lead-bg; 
 			border-radius: 0; 
@@ -40,14 +50,17 @@
 
 .info-card{
 	max-width: 95rem;
-	.card{
-		margin: -162px auto 30px;
-	}
+	// .card{
+	// 	margin: -162px auto 30px;
+	// }
 }
 
 //INFOCARD2 WITH IMAGE: 
 .info-card2{
 	position: relative; 
+	.info-card-image2{
+		background: transparent;
+	} 
 	@media (max-width:$mdtablet){
 		padding-top: 0 !important;
 		padding-bottom: 0 !important; 
@@ -81,9 +94,9 @@
 			border-radius: 0; 
 			box-shadow: -25px 12px 46px 0 rgba(0,0,0,0.27);
 			display: block; 
-			min-height: 40rem; 
+			// min-height: 40rem; 
 			position: relative; 
-			width: 100%; 
+			width: 25%; 
 			z-index: 0; 
 			@media (max-width:$mdtablet){
 				box-shadow: none;
@@ -95,12 +108,12 @@
 	}
 	//INFOTEXT2
 	.info-card-text{
-		bottom: 0rem; 
-		left: 18rem; 
-		max-width: 35rem; 
-		opacity: 0.95; 
-		position: absolute; 
-		z-index: 2;
+		bottom: 21rem;
+    left: 33rem;
+    max-width: 35rem;
+    opacity: 0.95;
+    position: absolute;
+    z-index: 2;
 		@media (max-width:$mdtablet){
 			margin: 0 auto; 
 			max-width: none; 

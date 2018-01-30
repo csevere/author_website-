@@ -58,6 +58,9 @@ body{
 		a{
 			text-decoration: none;
 			color: white; 
+			@media (max-width:$mdtablet){
+				padding-left: 0 !important; 
+			} 
 			&:hover{
 				color:$hover !important; 
 				border-bottom: 1px solid #f46a60; 

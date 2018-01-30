@@ -31,7 +31,7 @@ $(document).ready(function(){
   $(window).scroll(function(){
   	var scroll = $(window).scrollTop();
 	  if (scroll > 300) {
-			$('.navbar').css({'background-color': '#1b1e21', 'box-shadow': '2px 2px 5px #17a2b8'});
+			$('.navbar').css({'background-color': '#fff', 'box-shadow': '2px 2px 5px #17a2b8'});
 			$('.navbar a').css({'color': '#17a2b8'});
 			$('.nav-item a').css({'color': '#17a2b8'});
 	  }
