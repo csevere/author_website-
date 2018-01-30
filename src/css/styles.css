@@ -290,8 +290,8 @@ body {
       .navbar .nav-item a {
         padding-left: 0 !important; } }
     .navbar .nav-item a:hover {
-      color: #f46a60 !important;
-      border-bottom: 1px solid #f46a60; }
+      color: #60caf4 !important;
+      border-bottom: 1px solid #60caf4; }
 
 .showcase {
   background-image: url("../img/main-bg.jpg");
