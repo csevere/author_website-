@@ -1,4 +1,4 @@
-# Octagon project
+# Author Website
 Multipage site promoting an author's book
 
 ## Workflow and Tools
