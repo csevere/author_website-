@@ -1,0 +1,146 @@
+//CONTACT
+@import 'variables'; 
+$fontsize: 1.5rem; 
+$gbg:#212529; 
+$font1:'Coming Soon', cursive;
+$font2:'Short Stack', cursive;
+$font3: 'Walter Turncoat', cursive;
+$font4:'Sedgwick Ave Display', cursive;
+
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+input:-webkit-autofill, 
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  // border: 1px solid $text-lead;
+  -webkit-text-fill-color: $lead-text;
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.guestbook{
+	background: $gbg;
+	.mlabel{
+		font-family: $font1;
+		color:$lead-text; 
+		font-weight: bolder; 
+	}
+
+	.messages{
+		font-family: $font2;
+		.person{
+			font-family: $font3;
+			color:$lead-text; 
+			font-weight: bolder; 
+			font-size: $fontsize; 
+		}
+		.u-speechbox{
+			
+			position: relative;
+			background: white;
+			border-radius: .2em;
+			textarea{
+				border-color: transparent !important; 
+			}
+		}
+		.u-speechbox:after {
+			content: '';
+			position: absolute;
+			left: 1%;
+			top: 9%;
+			width: 0;
+			height: 0;
+			border: 20px solid transparent;
+			border-right-color: white;
+			border-left: 0;
+			border-bottom: 0;
+			margin-top: -10px;
+			margin-left: -20px;
+		}
+
+	}
+	.form-control{
+		border-radius: 0;
+		border-color: black;
+		border-width: 0 0 2px 0;
+		border-style: none none solid none;
+		box-shadow: none;
+		background: transparent;
+	}
+	.active{
+		border-bottom: 1px solid $hover; 
+	}
+
+	.guest{ 
+		color: $lead-text; 
+		font-family: $font2; 
+		height: 100%;
+		margin-top: 14rem; 
+		min-height: 62rem;
+		input{
+				border-radius: 0 !important; 
+		}
+		.btn{
+				background-color: $lead-bg;
+				color: #fff; 
+				border-radius: 0%; 
+				&:hover{
+						background-color: #fff;
+						color: $lead-text !important;
+						border: 1px solid $border;   
+				}
+		}
+		.col-form-label{
+			font-size: $fontsize; 
+			@media (max-width:$tablet){
+				font-size: 1.2rem; 
+				padding: 10px; 
+			}
+
+		}
+
+		.guestform{
+			background-image: url('../img/crumpled.jpg');
+			.email,.name, .website, .message{
+				font-family: $font3;
+			}
+			.speechbox{
+			
+				position: relative;
+				background: white;
+				border-radius: .2em;
+				textarea{
+					border-color: transparent !important; 
+				}
+			}
+			.speechbox:after {
+				content: '';
+				position: absolute;
+				left: 1%;
+				top: 9%;
+				width: 0;
+				height: 0;
+				border: 20px solid transparent;
+				border-right-color: white;
+				border-left: 0;
+				border-bottom: 0;
+				margin-top: -10px;
+				margin-left: -20px;
+				@media (max-width:$mobile){
+					left: 12%;
+					top: 0%;	
+			 	}
+			}
+
+
+		}
+	}
+
+}

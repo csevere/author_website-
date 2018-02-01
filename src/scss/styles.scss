@@ -7,7 +7,7 @@
 
 @import 'infocards';
 @import 'variables'; 
-@import 'contact'; 
+@import 'guest'; 
 
 
 *{  
@@ -24,7 +24,7 @@ html{
 }
 
 body{
-	background: #e9ecef; 
+	background: $background; 
 	display: flex;
 	font-family: $lead-font; 
 	flex-direction: column;
@@ -184,7 +184,7 @@ body{
 
 //FOOTER 
 footer{
-	background: $background;
+	background: #fff;
 	color: $lead-text; 
 	font-family: 'Lato', sans-serif;
 	padding: 3rem; 

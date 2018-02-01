@@ -260,25 +260,111 @@
         padding-bottom: 0 !important;
         padding-top: 0 !important; } }
 
-.contactform {
-  background: rgba(82, 75, 76, 0.3); }
-  .contactform .active {
-    border-bottom: 1px solid #f46a60; }
-  .contactform .contact {
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #17a2b8;
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+  transition: background-color 5000s ease-in-out 0s; }
+
+.guestbook {
+  background: #212529; }
+  .guestbook .mlabel {
+    font-family: "Coming Soon", cursive;
     color: #17a2b8;
+    font-weight: bolder; }
+  .guestbook .messages {
+    font-family: "Short Stack", cursive; }
+    .guestbook .messages .person {
+      font-family: "Walter Turncoat", cursive;
+      color: #17a2b8;
+      font-weight: bolder;
+      font-size: 1.5rem; }
+    .guestbook .messages .u-speechbox {
+      position: relative;
+      background: white;
+      border-radius: .2em; }
+      .guestbook .messages .u-speechbox textarea {
+        border-color: transparent !important; }
+    .guestbook .messages .u-speechbox:after {
+      content: '';
+      position: absolute;
+      left: 1%;
+      top: 9%;
+      width: 0;
+      height: 0;
+      border: 20px solid transparent;
+      border-right-color: white;
+      border-left: 0;
+      border-bottom: 0;
+      margin-top: -10px;
+      margin-left: -20px; }
+  .guestbook .form-control {
+    border-radius: 0;
+    border-color: black;
+    border-width: 0 0 2px 0;
+    border-style: none none solid none;
+    box-shadow: none;
+    background: transparent; }
+  .guestbook .active {
+    border-bottom: 1px solid #60caf4; }
+  .guestbook .guest {
+    color: #17a2b8;
+    font-family: "Short Stack", cursive;
     height: 100%;
-    margin-top: 2rem;
+    margin-top: 14rem;
     min-height: 62rem; }
-    .contactform .contact input {
-      border-radius: 0.2rem !important; }
-    .contactform .contact .btn {
+    .guestbook .guest input {
+      border-radius: 0 !important; }
+    .guestbook .guest .btn {
       background-color: #17a2b8;
       color: #fff;
       border-radius: 0%; }
-      .contactform .contact .btn:hover {
+      .guestbook .guest .btn:hover {
         background-color: #fff;
         color: #17a2b8 !important;
         border: 1px solid #17a2b8; }
+    .guestbook .guest .col-form-label {
+      font-size: 1.5rem; }
+      @media (max-width: 1024px) {
+        .guestbook .guest .col-form-label {
+          font-size: 1.2rem;
+          padding: 10px; } }
+    .guestbook .guest .guestform {
+      background-image: url("../img/crumpled.jpg"); }
+      .guestbook .guest .guestform .email, .guestbook .guest .guestform .name, .guestbook .guest .guestform .website, .guestbook .guest .guestform .message {
+        font-family: "Walter Turncoat", cursive; }
+      .guestbook .guest .guestform .speechbox {
+        position: relative;
+        background: white;
+        border-radius: .2em; }
+        .guestbook .guest .guestform .speechbox textarea {
+          border-color: transparent !important; }
+      .guestbook .guest .guestform .speechbox:after {
+        content: '';
+        position: absolute;
+        left: 1%;
+        top: 9%;
+        width: 0;
+        height: 0;
+        border: 20px solid transparent;
+        border-right-color: white;
+        border-left: 0;
+        border-bottom: 0;
+        margin-top: -10px;
+        margin-left: -20px; }
+        @media (max-width: 414px) {
+          .guestbook .guest .guestform .speechbox:after {
+            left: 12%;
+            top: 0%; } }
 
 * {
   box-sizing: border-box; }
@@ -410,7 +496,7 @@ body {
             min-height: 17rem; } }
 
 footer {
-  background: #f8f9fa;
+  background: #fff;
   color: #17a2b8;
   font-family: 'Lato', sans-serif;
   padding: 3rem; }
