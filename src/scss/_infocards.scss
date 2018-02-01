@@ -1,9 +1,12 @@
 @import 'variables'; 
 
 //INFO CARDS
+.spoiler{
+	box-shadow: -25px 12px 46px 0 rgba(0,0,0,0.27);
+}
 .info-card, .info-card2, .info-card3, .info-card4, .info-card5{
 	.card{
-		box-shadow: -25px 12px 46px 0 rgba(0,0,0,0.27);
+		// box-shadow: -25px 12px 46px 0 rgba(0,0,0,0.27);
 		border: 1px solid $border !important;
 		border-radius: 0; 
 		// margin: -60px auto 30px;
@@ -19,7 +22,7 @@
 			color: $lead-text;  
 			h1{
 				@media (max-width:$mdtablet){
-					font-size:2rem; 
+					font-size:1.6rem; 
 				} 
 				@media (max-width:$mdtablet){
 					padding: 0 !important;  
@@ -31,6 +34,7 @@
 			font-size: 1.4rem;
 			@media (max-width:$mobile){
 				padding: 0 !important; 
+				font-size: 1.2em; 
 			} 
 		}
 		.btn{
@@ -55,9 +59,11 @@
 	// }
 }
 
-//INFOCARD2 WITH IMAGE: 
+//INFOCARD2 WITH ALY: 
 .info-card2{
 	position: relative; 
+	height: 100%;
+	min-height: 50rem; 
 	.info-card-image2{
 		background: transparent;
 	} 
@@ -83,33 +89,53 @@
 	}
 	.info-card-image2{
 		border: none !important; 
-		margin: 1rem auto 0;
-		@media (max-width:$mdtablet){
+		margin: 4rem auto 0;
+		@media (max-width:$desktop){
 			margin: 0 auto; 
 			position: static; 
 			min-height: 0; 
 			padding: 0 !important; 
+			background: black; 
+		} 
+
+		@media (min-width:$xlarge){
+			margin: 0 auto; 
+			position: static; 
+			min-height: 0; 
+			padding: 0 !important; 
+			background: black; 
 		} 
 		img{
 			border-radius: 0; 
 			box-shadow: -25px 12px 46px 0 rgba(0,0,0,0.27);
 			display: block; 
+			left: 5em; 
 			// min-height: 40rem; 
 			position: relative; 
 			width: 25%; 
 			z-index: 0; 
-			@media (max-width:$mdtablet){
+			@media (max-width:$desktop){
 				box-shadow: none;
 				position: static; 
-				width: 100%;
+				// width: 100%;
+				margin: auto;
 				min-height: 0;  
 			} 
+
+			// @media (min-width:$xlarge){
+			// 	box-shadow: none;
+			// 	position: static; 
+			// 	// width: 100%;
+			// 	margin: auto;
+			// 	min-height: 0;  
+			// } 
 		}	
 	}
 	//INFOTEXT2
 	.info-card-text{
 		bottom: 21rem;
-    left: 33rem;
+		box-shadow: -25px 12px 46px 0 rgba(0,0,0,0.27);
+    left: 39rem;
     max-width: 35rem;
     opacity: 0.95;
     position: absolute;
@@ -127,15 +153,19 @@
 
 
 
-//INFOCARD 3
+//INFOCARD 3 W/ URIEL 
 .info-card3{
 	position: relative;
 	height: 100%;
 	min-height: 50rem; 
+	.info-card-image3{
+		background: transparent;
+	} 
 	@media (max-width:$mdtablet){
 		padding-top: 0 !important;
 		padding-bottom: 0 !important; 
 		min-height: 0; 
+		margin-top: 5em;
 	} 
 	&:hover{
 		animation-name: cardmove2;
@@ -153,24 +183,34 @@
 		border: none !important;
 		margin: 4rem auto 0;  
 		height: 100%;
-		@media (max-width:$mdtablet){
+		@media (max-width:$desktop){
 			margin: 0 auto; 
 			position: static; 
 			min-height: 0; 
 			padding: 0 !important; 
-		} 
+			background: black; 
+		}
+		@media (min-width:$xlarge){
+			margin: 0 auto; 
+			position: static; 
+			min-height: 0; 
+			padding: 0 !important; 
+			background: black; 
+		}  
 		img{
 			border-radius: 0; 
 			box-shadow: -25px 12px 46px 0 rgba(0,0,0,0.27);
 			display: block; 
+			left: 48em;
 			min-height: 40rem; 
 			position: relative; 
-			width: 100%; 
+			width: 25%; 
 			z-index: 0; 
-			@media (max-width:$mdtablet){
+			@media (max-width:$desktop){
 				box-shadow: none;
     		position: static;
-    		width: 100%;
+				// width: 100%;
+				margin: auto; 
     		min-height: 17rem;
     		height: 100%; 
 			} 
@@ -178,8 +218,8 @@
 	}
 	//INFOTEXT3
 	.info-card-text {
-		border: none !important; 
-		bottom: 0; 
+		bottom: 16rem; 
+		box-shadow: -25px 12px 46px 0 rgba(0,0,0,0.27);
     left: 19rem;
 		max-width: 35rem; 
 		opacity: 0.9; 
@@ -195,6 +235,7 @@
 	} 
 }
 
+//INFOCARD 4
 .info-card4{
 	max-width: 85rem;
 	margin: 0 auto;  

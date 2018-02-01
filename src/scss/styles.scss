@@ -24,13 +24,17 @@ html{
 }
 
 body{
-	background: black; 
+	background: #e9ecef; 
 	display: flex;
 	font-family: $lead-font; 
 	flex-direction: column;
 }
 
 //NAVBAR
+
+.fa-bars{
+	color: white; 
+}
 .navbar{
 	background: transparent; 
 	transition: background 500ms;
@@ -38,8 +42,11 @@ body{
 
 	.navbar-toggler {
     background:transparent;
-    border: 1px solid $border;
+    border: 1px solid white;
 		border-radius: 0.15rem;
+		.fa-bars{
+			color: white; 
+		}
 		.icon{
 			font-size: 1.5rem;
 		}
@@ -149,7 +156,7 @@ body{
 			display: block; 
 			transform: translate(0, -50%); 
 			cursor: pointer;
-			@media (max-width:$mdtablet){
+			@media (max-width:$mobile){
 				display: none !important; 
 			}
 		}
@@ -177,7 +184,8 @@ body{
 
 //FOOTER 
 footer{
-	background: black;
+	background: $background;
+	color: $lead-text; 
 	font-family: 'Lato', sans-serif;
 	padding: 3rem; 
 	@media (max-width:$mdtablet){
@@ -191,7 +199,7 @@ footer{
 	.footer-links1, .footer-links2{
 		a{
 			text-decoration: none;
-			color: white;
+			color: $lead-text;
 
 		}
 	}
