@@ -7,6 +7,7 @@
 .info-card, .info-card2, .info-card3, .info-card4, .info-card5{
 	.card{
 		// box-shadow: -25px 12px 46px 0 rgba(0,0,0,0.27);
+		background: $cardbg; 
 		border: 1px solid $border !important;
 		border-radius: 0; 
 		// margin: -60px auto 30px;
@@ -139,7 +140,10 @@
     max-width: 35rem;
     opacity: 0.95;
     position: absolute;
-    z-index: 2;
+		z-index: 2;
+		@media (min-width:$xxlarge){
+			left: 45em; 
+		} 
 		@media (max-width:$mdtablet){
 			margin: 0 auto; 
 			max-width: none; 
@@ -178,6 +182,9 @@
 			75%  {right: 0px;}
 			100% {right: 0px;}
 		}
+		@media (max-width:$mdtablet){
+			animation-duration: 0s; 
+		} 
 	}
 	.info-card-image3{
 		border: none !important;

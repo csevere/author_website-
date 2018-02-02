@@ -102,13 +102,12 @@ body{
 			}
 
 			h1{
+				opacity: 0.9; 
 				@media (max-width:$mdtablet){
 					font-size: 3rem;
-					opacity: 0.9; 
 				}
 				@media (max-width:$mobile){
 					font-size: 2rem;
-					opacity: 0.9; 
 				}
 			}
 
@@ -119,6 +118,11 @@ body{
 				letter-spacing: 1px; 
 				margin-top: -4rem;
 				width: 100%;
+				@media (min-width:$xlarge){
+					margin-top: 4.8em; 
+					margin-left: -2em;
+    			font-size: 4em;
+				}
 				
 			}
 
@@ -126,12 +130,18 @@ body{
 
 }
 
-
 //CAROUSEL
 .carousel{
 	height: 100%;
 	min-height: 45rem;
 	margin-top: 3em;
+	.slick-dots li button:before{
+		color:#fff !important; 
+	}
+	.slick-dots li.slick-active button:before {
+    opacity: .75;
+		color: $lead-text !important;
+	}
 	@media (max-width:$mdtablet){
 		min-height: 0; 
 		width: 100% !important; 
@@ -184,7 +194,7 @@ body{
 
 //FOOTER 
 footer{
-	background: #fff;
+	background: $cardbg;
 	color: $lead-text; 
 	font-family: 'Lato', sans-serif;
 	padding: 3rem; 
@@ -214,9 +224,6 @@ footer{
 		font-size: 0.8rem; 
 	}
 }
-
-
-
 
 // HOVER EFFECTS
 // GROW

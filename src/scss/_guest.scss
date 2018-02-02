@@ -1,7 +1,6 @@
 //CONTACT
 @import 'variables'; 
 $fontsize: 1.5rem; 
-$gbg:#212529; 
 $font1:'Coming Soon', cursive;
 $font2:'Short Stack', cursive;
 $font3: 'Walter Turncoat', cursive;
@@ -26,7 +25,7 @@ select:-webkit-autofill:focus {
 }
 
 .guestbook{
-	background: $gbg;
+	background: $background!important;
 	.mlabel{
 		font-family: $font1;
 		color:$lead-text; 
@@ -82,10 +81,13 @@ select:-webkit-autofill:focus {
 		color: $lead-text; 
 		font-family: $font2; 
 		height: 100%;
-		margin-top: 14rem; 
-		min-height: 62rem;
+		margin-top: 4rem; 
+		min-height: 45rem;
 		input{
-				border-radius: 0 !important; 
+			border-radius: 0 !important;
+			@media (max-width:$tablet){
+				font-size: 1rem; 
+			} 
 		}
 		.btn{
 				background-color: $lead-bg;
@@ -101,7 +103,7 @@ select:-webkit-autofill:focus {
 			font-size: $fontsize; 
 			@media (max-width:$tablet){
 				font-size: 1.2rem; 
-				padding: 10px; 
+				padding: 4px; 
 			}
 
 		}

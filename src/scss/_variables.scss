@@ -1,16 +1,8 @@
-
-// $border: #dc3545;
-// $lead-text: #dc3545;
-// $lead-bg:#dc3545;
-
-
+$cardbg:#e9ecef; 
 $border: #17a2b8;
 $lead-text: #17a2b8;
 $lead-bg:#17a2b8;
-
-
-
-$background:#e9ecef;  
+$background:#212529;  
 $hover: #60caf4; 
 $primary-overlay: rgba(82, 75, 76, 0.3);
 $lead-font: 'Poppins', sans-serif; 
@@ -18,7 +10,10 @@ $title-font: 'Righteous', cursive;
 
 //media 
 $mobile: 414px; 
+// $mobile: 767px; 
 $mdtablet: 1200px;
-$tablet: 1024px;
+// $tablet: 1024px;
+$tablet: 1199px;
 $desktop: 1200px;  
 $xlarge: 1500px; 
+$xxlarge: 1650px; 
