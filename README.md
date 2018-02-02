@@ -15,5 +15,5 @@ HTML | CSS | SASS | JavaScript | PHP | MySQL
 </p>
 
 
-# Please do not use any artwork from this repo without permission. Thanks. 
+## Please do not use any artwork from this repo without permission. Thanks. 
 
